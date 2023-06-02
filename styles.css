@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+:root {
+  --bg-clr: #78b8fc;
+  --primary-clr: #495d7c;
+  --sub-text-clr: #c0c5d3;
+  --white: #fff;
+  --news-clr: #2f92ff;
+  --success-clr: #00c469;
+  --warning-clr: #ffa700;
+  --error-clr: #ff0000;
+}
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background: var(--bg-clr);
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--primary-clr);
+  padding: 0 20px;
+}
+
+.snackbars_main{
+  width: 850px;
+  max-width: 100%;
+  height: auto;
+  margin: 30px auto;
+}
+
+.snackbars_main .sb_wrap{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.snackbars_main .sb_wrap .sb_item{
+  width: 400px;
+  position: relative;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.snackbars_main .sb_wrap .sb_item.normal{
+  border-left: 4px solid; 
+}
+
+.snackbars_main .sb_wrap.news .sb_item.normal{
+  border-color: var(--news-clr);  
+}
+
+.snackbars_main .sb_wrap.success .sb_item.normal{
+  border-color: var(--success-clr);
+}
+
+.snackbars_main .sb_wrap.warning .sb_item.normal{
+  border-color: var(--warning-clr);
+}
+
+.snackbars_main .sb_wrap.error .sb_item.normal{
+  border-color: var(--error-clr);
+}
+
+.snackbars_main .sb_wrap .sb_item.normal{
+  background: var(--white);
+}
+
+.snackbars_main .sb_wrap .sb_item.grey{
+  background: var(--primary-clr);
+  color: var(--white);
+}
+
+.snackbars_main .sb_wrap .sb_item span{
+  font-size: 10px;
+}
+
+.snackbars_main .sb_wrap .sb_item span.time{
+  color: var(--sub-text-clr);
+}
+
+.snackbars_main .sb_wrap .sb_item p{
+  margin: 5px 0;
+}
+
+.snackbars_main .sb_wrap .sb_item .close{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.snackbars_main .sb_wrap .sb_item .close:hover{
+  opacity: 0.5;
+}
+
+.snackbars_main .sb_wrap.sb_icon .sb_item{
+  display: flex;
+  align-items: flex-start;
+}
+
+.snackbars_main .sb_wrap.sb_icon .sb_item .icon{
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.snackbars_main .sb_wrap.success .sb_item .icon{
+  color: var(--success-clr);
+}
+
+.snackbars_main .sb_wrap.warning .sb_item .icon{
+  color: var(--warning-clr);
+}
+
+.snackbars_main .sb_wrap.error .sb_item .icon{
+  color: var(--error-clr);
+}
